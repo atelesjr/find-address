@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    //This defines what 1rem is 
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: $color-body-bg-grey;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 5.5rem min-content 1fr;
+    grid-row-gap: 1rem;
+
+    max-width: 55rem;
+    margin: 3rem auto;
+
+}
+
